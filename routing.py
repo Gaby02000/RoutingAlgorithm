@@ -8,7 +8,6 @@ def set_place_for_name(string):
     x = ox.graph_from_place(place,network_type="drive")
     
     #set_nodes2(x)
-<<<<<<< HEAD
     n= (input("Enter the starting latitude and longitude.\n"))
     val=n.split(', ')
     starting_latitude=float(val[0])
@@ -20,12 +19,6 @@ def set_place_for_name(string):
     val=n.split(', ')
     destination_latitude = float(val[0])
     destination_longitude = float(val[1])
-=======
-    starting_latitude = float(input("Enter the starting latitude.\n"))
-    starting_longitude = float(input("Enter the starting longitude.\n"))
-    destination_latitude = float(input("Enter the destination latitude.\n"))
-    destination_longitude = float(input("Enter the destination longitude.\n"))
->>>>>>> 59306f1ca38a2ff465b201c222f91d18f154077e
     set_nodes(x,starting_latitude,starting_longitude,destination_latitude,destination_longitude)
 
 
