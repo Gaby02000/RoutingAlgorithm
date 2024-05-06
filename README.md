@@ -1,2 +1,2 @@
 # RoutingAlgorithm
-Este algoritmo debería mostrarte el camino mas corto de las rutas en base a 2 puntos cardinales basados en la latitud y longitud, el mismo toma la intersección de las calles como nodos y las calles como aristas 
+Este algoritmo debería mostrarte el camino mas corto de las rutas en base a 2 puntos cardinales basados en la latitud y longitud, primero se debe ingresar una localidad, provincia o pais segun el nombre o su longitud o latitud y un radio(si la libreria no reconoce el nombre agregarlo por lat y long), el mismo toma la intersección de las calles como nodos y las calles como aristas. 
