@@ -8,21 +8,32 @@ def set_place_for_name(string):
     x = ox.graph_from_place(place,network_type="drive")
     
     #set_nodes2(x)
-    starting_latitude = float(input("indiquie latitud de inicio.\n"))
-    starting_longitude = float(input("Indique la longitud de inicio.\n"))
-    destination_latitude = float(input("Indique la latitud de destino.\n"))
-    destination_longitude = float(input("Indique la longitud de destino.\n"))
+    n= (input("Enter the starting latitude and longitude.\n"))
+    val=n.split(', ')
+    starting_latitude=float(val[0])
+    print(starting_latitude)
+    starting_longitude=float(val[1])
+   
+
+    n=(input("Enter the destination latitude and longitude.\n"))
+    val=n.split(', ')
+    destination_latitude = float(val[0])
+    destination_longitude = float(val[1])
     set_nodes(x,starting_latitude,starting_longitude,destination_latitude,destination_longitude)
 
 
 def set_place_for_x_y(latitude,longitude,radius):
     x= ox.graph_from_point((latitude,longitude), radius, network_type="drive")
-    starting_latitude = float(input("Enter the starting latitude.\n"))
-    starting_longitude = float(input("Enter the starting longitude.\n"))
+    n= (input("Enter the starting latitude and longitude.\n"))
+    val=n.split(', ')
+    starting_latitude=float(val[0])
+    starting_longitude=float(val[1])
+   
 
-    destination_latitude = float(input("Enter the destination latitude.\n"))
-    destination_longitude = float(input("Enter the destination longitude.\n"))
-
+    n=(input("Enter the destination latitude and longitude.\n"))
+    val=n.split(', ')
+    destination_latitude = float(val[0])
+    destination_longitude = float(val[1])
     set_nodes(x,starting_latitude,starting_longitude,destination_latitude,destination_longitude)
 
 """
@@ -73,8 +84,10 @@ def main():
         else:
             set_place_for_name(val)
     elif (val=='2'):
-        latitude=float(input("Enter the latitude.\n"))
-        longitude=float(input("Enter the longitude.\n"))
+        n=(input("Enter the latitude and longitude of the location.\n"))
+        y=n.split(', ')
+        latitude=float(y[0])
+        longitude=float(y[1])
         radius=float(input("Enter a radius.\n"))
         set_place_for_x_y(latitude, longitude, radius)
     else:
