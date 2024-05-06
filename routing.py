@@ -54,7 +54,7 @@ def print_nodes(ax,fig,shortest_route,x):
         actual_node = shortest_route[i]
         ax.scatter(x.nodes[actual_node]['x'], x.nodes[actual_node]['y'], color='red', s=50, zorder=5)
         
-        ax.text(x.nodes[actual_node]['x'], x.nodes[actual_node]['y'], str(actual_node), fontsize=8, ha='right', color='white')
+        #ax.text(x.nodes[actual_node]['x'], x.nodes[actual_node]['y'], str(actual_node), fontsize=8, ha='right', color='white')
 
         plt.draw()
         plt.pause(0.5) 
