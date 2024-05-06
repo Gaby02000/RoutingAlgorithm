@@ -8,10 +8,10 @@ def set_place_for_name(string):
     x = ox.graph_from_place(place,network_type="drive")
     
     #set_nodes2(x)
-    starting_latitude = float(input("indiquie latitud de inicio.\n"))
-    starting_longitude = float(input("Indique la longitud de inicio.\n"))
-    destination_latitude = float(input("Indique la latitud de destino.\n"))
-    destination_longitude = float(input("Indique la longitud de destino.\n"))
+    starting_latitude = float(input("Enter the starting latitude.\n"))
+    starting_longitude = float(input("Enter the starting longitude.\n"))
+    destination_latitude = float(input("Enter the destination latitude.\n"))
+    destination_longitude = float(input("Enter the destination longitude.\n"))
     set_nodes(x,starting_latitude,starting_longitude,destination_latitude,destination_longitude)
 
 
