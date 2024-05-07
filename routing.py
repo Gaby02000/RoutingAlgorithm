@@ -51,7 +51,7 @@ def set_nodes(x,lat_i,long_i,lat_d,long_d):
     starting = ox.nearest_nodes(x, long_i, lat_i)  
     destination = ox.nearest_nodes(x, long_d, lat_d)
 
-    shortest_route = nx.shortest_path(x, starting, destination, weight='distance')
+    shortest_route = nx.shortest_path(x, starting, destination, weight='length')
     print_map(x,shortest_route)
 
 def print_map(x,shortest_route):
